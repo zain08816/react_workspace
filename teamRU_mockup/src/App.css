@@ -40,15 +40,20 @@
   pointer-events: none;
 }
 
-
-.Text-accent {
-  flex-direction: column;
-  align-items: center;
-  justify-content: top;
-  font-size: calc(10px + 2vmin);
-  color: var(--hover-color);
+.Title {
   font: var(--header-font);
+  font-size: 35pt
+  
 }
+
+.Title-white {
+  color: white;
+}
+
+.Title-accent {
+  color: var(--accent-color);
+}
+
 
 
 .App-header {
@@ -66,4 +71,3 @@
 .App-link {
   color: #61dafb;
 }
-

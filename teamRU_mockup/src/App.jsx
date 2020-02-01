@@ -1,21 +1,16 @@
 import React from 'react';
-import { Container, Header, List} from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 import Skills from './skills'
 import './App.css';
-
-const styleLink = document.createElement("link");
-styleLink.rel = "stylesheet";
-styleLink.href = "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css";
-document.head.appendChild(styleLink);
 
 
 function App() {
   return (
     <div className='App'>
-      <h1 className='Text-accent'>
-        TeamRU
-      </h1>
-      <Container style={{ margin: 80 }}>
+      <div className='Title'>
+        <span class="Title-white">Team</span><span class="Title-accent">RU</span>
+      </div>
+      <Container style={{ margin: 40 }}>S
         Select Skills
         <Skills />
       </Container>
