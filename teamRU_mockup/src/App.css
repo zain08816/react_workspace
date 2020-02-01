@@ -1,20 +1,58 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+
+/* Variables */
+:root {
+    /* Theme Colors */
+    --primary-color: #FFF5e8; /* Logo, link colors, text */
+    --primary-color-alt: #000000;  /* Form body bg, form headers text */
+    --secondary-color: #000000; /* Barely used accent color...combine this and primary-color-alt...? */
+    --secondary-color-alt: #C85151; /* Background color */
+    --accent-color: #F1BA43; /* Logout, Live button color */
+    --accent-color-alt: #F1BA43; /* Dashboard button color NOTE:  Dashboard colors are different across navbar on different pages */
+    --disabled-color: #EEEEe8; /* Unsure.... */
+    --hover-color: #F1BA43;
+    --hover-background-color: #df897f;
+    --active-color: rgba(255, 255, 255, 0.5);
+    --active-background-color: #5A7A96A0;
+    /* Fonts */
+    --header-font: 'Titillium Web', sans-serif;
+    --text-font: 'Titillium Web', sans-serif;
+
 }
+
+
+.App {
+  background-color: var(--secondary-color-alt);
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  
+}
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.Text-accent {
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: var(--hover-color);
+  font: var(--header-font);
 }
 
+
 .App-header {
-  background-color: #282c34;
+  background-color: var(--secondary-color-alt);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +62,8 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
