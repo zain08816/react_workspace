@@ -6,6 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
+          teamRU
+        </p>
+        <p>
           Create Profile
         </p>
         <a>
